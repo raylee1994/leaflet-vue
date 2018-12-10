@@ -141,7 +141,7 @@ body{ position: fixed;}
 
 /* 景区介绍 */
 .scenic_intro_con{width:100%;height:100%;background:#fff;position:fixed;bottom:-105%;z-index:1002;transition:0.3s;overflow-y:auto;}
-.scenic_intro_con.active{bottom:0;animation:ZoneBgColor 0.5s 0.3s ease both;
+.scenic_intro_con.active{transform: translateY(-105%);animation:ZoneBgColor 0.5s 0.3s ease both;
     }
 /* .scenic_intro_close{display:block;width:0.7rem;height:0.7rem;background:url(./images/icon.png) -9.45rem 0.14rem no-repeat;background-size:10rem auto;position:absolute;right:0.15rem;top:0.15rem;} */
 .scenic_intro_close{display:block;width:1rem;height:0.5rem;background:#fff;position:absolute;left:45%;top:calc(5% - 0.45rem);top:-webkit-calc(5% - 0.45rem);border-radius:1rem 1rem 0 0;box-shadow:0 -0.15rem 0.3rem rgba(0,0,0,0.3);z-index: 18;}
@@ -199,7 +199,7 @@ body{ position: fixed;}
 /* 弹窗详情 */
 .zone_box_con_wrap{width:100%;height:100%;position:fixed;bottom:-105%;z-index:1003;transition:0.3s;}
 .zone_box_con_wrap.active{
-    bottom:0;
+  transform: translateY(-105%);
     animation:ZoneBgColor 0.5s 0.3s ease both;
 }
 .zone_box_con{width:100%;/*height:80%;*/height: 95%;position:absolute;bottom:0;background:#fff;z-index:17;border-radius:0.3rem 0.3rem 0 0;box-shadow:0 -0.1rem 0.3rem rgba(0,0,0,0.3)}
@@ -246,7 +246,7 @@ body{ position: fixed;}
 
 /* 景区列表 */
 .scenic_list_con{width:100%;height:100%;background:#fff;position:fixed; bottom: -105%;z-index:1002;transition:0.3s;overflow-x:hidden;overflow-y:auto;}
-.scenic_list_con.active{ bottom: 0; animation:ZoneBgColor 0.5s 0.3s ease both;}
+.scenic_list_con.active{ transform: translateY(-105%); animation:ZoneBgColor 0.5s 0.3s ease both;}
 .scenic_list_con_inner{width: 100%; height: 95%; position: absolute; left: 0; right: 0; bottom: 0; background: #fff; z-index: 17; border-radius: 0.3rem 0.3rem 0 0; box-shadow: 0 -0.1rem 0.3rem rgba(0,0,0,0.3);}
 .scenic_list_close{display:block;width:1rem;height:0.5rem;background:#fff;position:absolute;left:45%;top:-0.45rem;border-radius:1rem 1rem 0 0;box-shadow:0 -0.15rem 0.3rem rgba(0,0,0,0.3);}
 .scenic_list_close i{display:block;width:0.7rem;height:0.7rem;background:url(../images/icon.png) -9.45rem 0.14rem no-repeat;background-size:10rem auto;margin:0 auto;position:relative;top:0.1rem; z-index: 2;}
@@ -406,7 +406,7 @@ body{ position: fixed;}
 
 /* 热点列表 */
 .hotspot_list_wrap{width: 100%; height: 100%; position: fixed; bottom: -105%; z-index: 1001; transition: 0.3s; }
-.hotspot_list_wrap.active{bottom: 0; animation: ZoneBgColor 0.5s 0.3s ease both;}
+.hotspot_list_wrap.active{transform: translateY(-105%); animation: ZoneBgColor 0.5s 0.3s ease both;}
 .hotspot_list_wrap .hotspot_list_con{width: 100%; height: 95%; position: absolute; bottom: 0; background: #fff; z-index: 17; border-radius: 0.3rem 0.3rem 0 0; box-shadow: 0 -0.1rem 0.3rem rgba(0,0,0,0.3);}
 .hotspot_list_wrap .hotspot_list_con .hotspot_close{display: block; width: 1rem; height: 0.5rem; background: #fff; position: absolute; left: 45%; top: -0.45rem; border-radius: 1rem 1rem 0 0; /* box-shadow: 0 -0.15rem 0.3rem rgba(0,0,0,0.3); */}
 .hotspot_list_wrap .hotspot_list_con .hotspot_close i{display: block; width: 0.7rem; height: 0.7rem; background: url(../images/icon.png) -9.45rem 0.14rem no-repeat; background-size: 10rem auto; margin: 0 auto; position: relative; top: 0.1rem; z-index: 2;}
@@ -430,7 +430,7 @@ body{ position: fixed;}
 
 /* 热点详情 */
 .hotspot_detail_wrap{width: 100%; height: 100%; position: fixed; bottom: -105%; z-index: 1002; transition: 0.3s; }
-.hotspot_detail_wrap.active{bottom: 0; animation: ZoneBgColor 0.5s 0.3s ease both;}
+.hotspot_detail_wrap.active{transform: translateY(-105%); animation: ZoneBgColor 0.5s 0.3s ease both;}
 .hotspot_detail_wrap .hotspot_detail_con{width: 100%; height: 95%; position: absolute; bottom: 0; background: #fff; z-index: 1002; border-radius: 0.3rem 0.3rem 0 0; box-shadow: 0 -0.1rem 0.3rem rgba(0,0,0,0.3);}
 .hotspot_detail_wrap .hotspot_detail_con .hotspot_detail_close{display: block; width: 1rem; height: 0.45rem; background: #fff; position: absolute; left: 45%; top: -0.45rem; border-radius: 1rem 1rem 0 0; /* box-shadow: 0 -0.15rem 0.3rem rgba(0,0,0,0.3); */}
 .hotspot_detail_wrap .hotspot_detail_con .hotspot_detail_close i{display: block; width: 0.7rem; height: 0.7rem; background: url(../images/icon.png) -9.45rem 0.14rem no-repeat; background-size: 10rem auto; margin: 0 auto; position: relative; top: 0.1rem; z-index: 2;}
@@ -445,7 +445,7 @@ body{ position: fixed;}
 /* 搜索详情 */
 .search_box_con_wrap{width:100%;height:100%;position:absolute;left:0;right:0;bottom:-105%;z-index:1003;transition:0.3s;overflow: hidden;}
 .search_box_con_wrap.active{
-    bottom:0;
+  transform: translateY(-105%);
     animation: ZoneBgColor 0.5s 0.3s ease both;
 }
 .search_box_con{width:100%;/*height:80%;*/height: 95%;position:absolute;left:0;right:0;bottom:0;background:#fff;z-index:17;border-radius:0.3rem 0.3rem 0 0;box-shadow:0 -0.1rem 0.3rem rgba(0,0,0,0.3)}
@@ -468,7 +468,7 @@ input::-webkit-input-placeholder {color: #989898;}
 /* 列表搜索详情 */
 .search_list_box_con_wrap{width:100%;height:100%;position:absolute;left:0;right:0;bottom:-105%;z-index:1003;transition:0.3s;overflow: hidden;}
 .search_list_box_con_wrap.active{
-    bottom:0;
+  transform: translateY(-105%);
     animation:ZoneBgColor 0.5s 0.3s ease both;
 }
 .search_list_box_con{width:100%;/*height:80%;*/height: 95%;position:absolute;left:0;right:0;bottom:0;background:#fff;z-index:17;border-radius:0.3rem 0.3rem 0 0;box-shadow:0 -0.1rem 0.3rem rgba(0,0,0,0.3)}
